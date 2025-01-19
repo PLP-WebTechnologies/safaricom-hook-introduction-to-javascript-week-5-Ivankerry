@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Assignment</title>
+</head>
+<body>
 
+  <h1>JavaScript Assignment</h1>
+  <p>Learning JavaScript is fun!</p>
+
+  <div id="dynamic-content"></div>
+
+  <script>
+    // Change the text of the h1 element
+    const heading = document.querySelector('h1');
+    heading.textContent = "JavaScript in Action!";
+
+    // Create a new paragraph element
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = "This content was added dynamically using JavaScript.";
+
+    // Get the dynamic-content div
+    const dynamicContentDiv = document.getElementById('dynamic-content');
+
+    // Append the new paragraph to the div
+    dynamicContentDiv.appendChild(newParagraph); 
+  </script>
+
+</body>
+</html>
